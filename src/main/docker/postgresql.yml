@@ -1,0 +1,11 @@
+version: '2'
+services:
+  helloapp-postgresql:
+    image: postgres:12.1
+    # volumes:
+    #     - ~/volumes/jhipster/helloapp/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=helloapp
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
